@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.ITopicMapping">
+	<select id="queryAllTopics" resultType="entity.Topic" >
+	    select * from topic
+	</select>
+	<select id="queryTopicById" resultType="entity.Topic" parameterType="int">
+	   select * from topic where id = #{id}
+	</select>
+	<insert id="addTopic"   parameterType="entity.Topic" >
+	    insert into topic(title,content) values(#{title},#{content})
+	</insert>
+	<update id="updateTopic" parameterType="entity.Topic">
+	    update topic set title=#{title},content=#{content} where id=#{id}
+	</update>
+	<delete id="deleteTopic" parameterType="int">
+	    delete from topic where id = #{id}
+	</delete>
+	
+</mapper>
