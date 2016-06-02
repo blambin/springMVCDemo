@@ -5,9 +5,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>修改</title>
+
+<script type="text/javascript">
+  
+</script>
 </head>
 <body>
-<form action="updateTopic.action" method="post">
+<form action="updateTopic.action" method="post" >
     <input type="text" readonly="readonly" name="id" value="${topic.id}">
     <input type="text" name="title" value="${topic.title}"/>
     <input type="text" name="content" value="${topic.content}"/>

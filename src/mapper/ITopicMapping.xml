@@ -18,5 +18,16 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<delete id="deleteTopic" parameterType="int">
 	    delete from topic where id = #{id}
 	</delete>
+	<delete id="deleteTopics" parameterType="int">
+	    delete from topic
+	    <include refid="delete_conditions"></include>
+	</delete>
+	<sql id="delete_conditions">
+	    <where>
+	        <foreach collection="array" separator="or" item="id">
+	            id=#{id}
+	        </foreach>
+	    </where>
+	</sql>
 	
 </mapper>

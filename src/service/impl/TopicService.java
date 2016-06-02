@@ -42,6 +42,12 @@ public class TopicService implements ITopicService {
 	public void updateTopic(Topic t) {
 		this.topicMapping.updateTopic(t);		
 	}
+
+	@Override
+	public void deleteTopics(int[] ids) {
+		// TODO Auto-generated method stub
+		this.topicMapping.deleteTopics(ids);
+	}
 	
 
 }

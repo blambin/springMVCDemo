@@ -12,6 +12,8 @@ public interface ITopicMapping {
 	
 	public void deleteTopic(int id);
 	
+	public void deleteTopics(int[] ids);
+	
 	public Topic queryTopicById(int id);
 	
 	public void updateTopic(Topic t);

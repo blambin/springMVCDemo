@@ -11,5 +11,5 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
         
         <bean id="topicService" class="service.impl.TopicService" ></bean>
-        
+        <bean id="userService" class="service.impl.UserService" ></bean>
 </beans>
