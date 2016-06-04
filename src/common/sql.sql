@@ -10,11 +10,19 @@ INSERT INTO topic VALUES("1","标题1","内容1");
 INSERT INTO topic VALUES("2","标题2","内容2");
 
 CREATE TABLE USER(
-    id VARCHAR(50) PRIMARY KEY,
+    id INT(50)  PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(50),
     PASSWORD VARCHAR(50),
     nick VARCHAR(50),
-   spring_mybatis picture VARCHAR(300)
+    picture VARCHAR(300)
 )
 
 INSERT INTO USER VALUES("1","bbb","bbb","小明",NULL);
+
+/*drop table user;
+
+*/
+
+/*---------------------------------------------*/
+
+SELECT * FROM USER;

@@ -8,6 +8,6 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		select * from user where username=#{userName} and password=#{password}
 	</select>
 	<insert id="saveUser"   parameterType="entity.User" >
-	    insert into user(nick,password,picture,username) values(#{nick},#{password},#{picture},#{username})
+	    insert into user(nick,password,picture,username) values(#{nick},#{password},#{picture},#{userName})
 	</insert>
 </mapper>

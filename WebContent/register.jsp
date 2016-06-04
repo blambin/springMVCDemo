@@ -25,7 +25,7 @@
 <title>论坛 - 注册</title>
 </head>
 <body>
-	<form action="register.action" method="post">
+	<form action="register.action" method="post" enctype="multipart/form-data">
 	    <h4 align="center">用户注册向导</h4>
 	    <center>${msg}</center>
 		<div id="css_table" align="center">
@@ -56,7 +56,7 @@
 			<div class="css_tr">
 				<div class="css_td">你的头像:</div>
 				<div class="css_td">
-					<input type="file" name="picture" />
+					<input type="file" name="photo" />
 				</div>
 			</div>
 			<div class="css_tr">
